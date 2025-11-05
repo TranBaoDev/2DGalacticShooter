@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatlamaKod : StateMachineBehaviour
+// Hit Animation Code
+public class HitAnimationCode : StateMachineBehaviour // "VurmaAnimasyon" means Hit Animation
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -17,10 +18,11 @@ public class PatlamaKod : StateMachineBehaviour
     //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
+    // This function runs when the animation state is finished.
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        // Destroy the GameObject that the Animator component is attached to.
         Destroy(animator.gameObject);
-        Debug.Log("Yok oldu");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

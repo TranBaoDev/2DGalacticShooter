@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dusman
   - Meteor
-  - Mermi
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -44,21 +44,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Arkaplan
+  - name: Background
     uniqueID: 4028537045
     locked: 0
-  - name: Dusman
+  - name: Enemy
     uniqueID: 3142134831
     locked: 0
-  - name: Mermi
+  - name: Bullet
     uniqueID: 1663323193
     locked: 0
-  - name: Ucak
+  - name: Player
     uniqueID: 2057743679
     locked: 0
-  - name: Kirmizi
+  - name: Red
     uniqueID: 1453146939
     locked: 0
-  - name: Yesil
+  - name: Green
     uniqueID: 4170036581
     locked: 0

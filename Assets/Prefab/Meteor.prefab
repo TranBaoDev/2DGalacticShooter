@@ -197,15 +197,15 @@ SpriteRenderer:
   m_SortingLayerID: 2057743679
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 3a7f88d4edbabce49bb4176a98751aa1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.5, y: 3.7}
+  m_Size: {x: 2.6923077, y: 2.8461537}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &224235171415441278
@@ -220,9 +220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2c00bf46b2fa347b277af78ec061bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hayatCizgisi: {fileID: 5925511504520879165}
+  _healthBar: {fileID: 4165969685403478151, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
   _sprite: {fileID: 6755895156755972956}
-  _kucukMeteorSablon: {fileID: 6066107747299342139, guid: fdc616824a2b98c4da3751bf702dc00e, type: 3}
+  _smallMeteorPrefab: {fileID: 6066107747299342139, guid: fdc616824a2b98c4da3751bf702dc00e, type: 3}
 --- !u!50 &8917641583595971985
 Rigidbody2D:
   serializedVersion: 4
@@ -251,6 +251,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224235171415441276}
     m_Modifications:
+    - target: {fileID: 4165969684490345020, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
+      propertyPath: m_Name
+      value: Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165969684710359632, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
+      propertyPath: m_Name
+      value: Red
+      objectReference: {fileID: 0}
     - target: {fileID: 4165969684710359647, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.8380883
@@ -262,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 4165969684710359647, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.4238319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165969685167006433, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
+      propertyPath: m_Name
+      value: Green
       objectReference: {fileID: 0}
     - target: {fileID: 4165969685403478150, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
       propertyPath: m_RootOrder
@@ -313,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165969685403478200, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
       propertyPath: m_Name
-      value: HayatCizgisi
+      value: HealthBar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
@@ -322,14 +334,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4165969685403478150, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
   m_PrefabInstance: {fileID: 7776548921709442234}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5925511504520879165 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4165969685403478151, guid: 87f25576cbe9f0a4690a3b3909e1e875, type: 3}
-  m_PrefabInstance: {fileID: 7776548921709442234}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1660b181e2e284f47afc577809da9f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
